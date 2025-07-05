@@ -34,17 +34,21 @@ Built using [Streamlit](https://streamlit.io) and [GitPython](https://github.com
 ## Installation
 
 ### 1.Clone the repository
+
 ```bash
 git clone https://github.com/your-username/gitchat.git
 cd gitchat
+```
 
 ### 2.Install required Python packages
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3.Running App Locally
 ```bash
 streamlit run app.py
+```
 
 ###SECURITY NOTICE 
 This app uses GitHub Personal Access Tokens.Tokens are saved locally in plain text(config.json). DO NOT commit or upload it anywhere public
