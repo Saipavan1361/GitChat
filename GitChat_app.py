@@ -24,11 +24,13 @@ st.title("GitHub based Messenger")
 
 #INPUT FIELDS
 st.warning("MAKE SURE THE REPO's YOU CREATED IS PRIVATE AND HAVE 'chats/'FOLDER")
-your_username=st.text_input("Username",value=default_data["your_username"])
+your_username=st.text_input("Your GtHub Username",value=default_data["your_username"])
+st.warning("Enter the username of GitHub. Do not enter the random one")
 your_token=st.text_input("Your GitHub Personal Access Token",type="password",value=default_data["your_token"])
 your_repo_url=st.text_input("Your GitHub repo URL",value=default_data["your_repo_url"])
 st.markdown("------")
-partner_username=st.text_input("Partner Username")
+partner_username=st.text_input("Partner GitHub Username")
+st.warning("Enter the username of GitHub. Do not enter the random one")
 partner_token=st.text_input("Partner GitHub Personal Access Token",type="password",value=default_data["partners"].get(partner_username, {}).get("token", ""))
 partner_repo_url=st.text_input("Partner GitHub repo URL",value=default_data["partners"].get(partner_username, {}).get("repo", ""))
 
