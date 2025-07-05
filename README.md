@@ -36,7 +36,7 @@ Built using [Streamlit](https://streamlit.io) and [GitPython](https://github.com
 ### 1.Clone the repository
 
 ```bash
-git clone https://github.com/your-username/gitchat.git
+git clone https://github.com/Saipavan1361/gitchat.git
 cd gitchat
 ```
 
