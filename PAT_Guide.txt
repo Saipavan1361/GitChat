@@ -1,0 +1,30 @@
+GitHub Personal Access Token (PAT) Setup Guide
+---------------------------------------------------
+
+Follow these steps to create and enable a Personal Access Token (PAT) for use with GitChat:
+
+1. Go to GitHub:
+   https://github.com/settings/tokens
+
+2. Click on "Classic tokens"
+
+3. Click "Generate new token".
+   -Choose "Generate new token (Classic)"
+
+4. Set the following options:
+   - Name: Give accordingly
+   - Expiration: Choose 30 days, 90 days, or "No expiration"(Recomended as you need to generate if time period expires)
+   - Scopes (check these):
+     ✅ repo        (Full control of private repositories)
+     ✅ workflow    (Optional: needed for GitHub Actions if ever used)
+
+5. Click "Generate token"
+
+6. IMPORTANT: Copy the token immediately and save it somewhere safe.
+   You won’t be able to view it again.
+
+7. Keep the token secure:
+   - DO NOT commit it to GitHub
+   - Store it locally in `config.json` and add that file to `.gitignore`
+
+Done! You can now use GitChat to access your private GitHub repository.
